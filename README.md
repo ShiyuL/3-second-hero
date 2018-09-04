@@ -12,6 +12,7 @@ To setup basic function of this game. Do the
 
 <pre>
  ---------------------------  
+|  HP [================]    |  
 |                           |  
 |  x                        |  
 |                    x      |  
@@ -21,7 +22,6 @@ To setup basic function of this game. Do the
 |                           |  
 |          HERO        x    |  
 |---------------------------|  
-|  HP [================]    |  
 | [   ]  [   ]  [   ] |{   }|  
 | [   ]  [   ]  [   ] |{   }|  
 -----------------------------  
