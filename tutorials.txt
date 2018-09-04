@@ -1,0 +1,5 @@
+Basic:
+write your first Android Game: https://www.youtube.com/watch?v=1hf0HYq5yzc&t=12s
+
+Example: 
+(14 lectures) Game Tutorial: https://www.youtube.com/watch?v=G5RarQ03MZA
