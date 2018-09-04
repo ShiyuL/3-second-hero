@@ -10,6 +10,7 @@ Think about do you need "Picture" in main directory, or better to have "Statics"
 ### Stage 1
 To setup basic function of this game. Do the 
 
+<pre>
  ---------------------------  
 |                           |  
 |  x                        |  
@@ -25,7 +26,7 @@ To setup basic function of this game. Do the
 | [   ]  [   ]  [   ] |{   }|  
 -----------------------------  
 
-
+</pre>
 
 ## Copy Right
 Please do not use it for commercial uses.  
