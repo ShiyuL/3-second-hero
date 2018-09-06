@@ -1,7 +1,6 @@
-local carrier = {}
+require("global_variables")
 
-halfW = display.contentWidth / 2
-halfH = display.contentHeight / 2
+local carrier = {}
 
 function startGame( event ) 
 	local phase = event.phase

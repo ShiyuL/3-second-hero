@@ -4,8 +4,15 @@
 --
 -----------------------------------------------------------------------------------------
 
+
+
+
+-- Pop the welcome page
 local bg = require("welcome")
 bg.setBackground()
+
+
+-- Initiate a button and if clicked, goes to game page.
 local game = require("game")
 local widget = require("widget")
 myButton = widget.newButton

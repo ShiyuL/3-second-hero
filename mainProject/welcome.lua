@@ -1,5 +1,4 @@
-halfW = display.contentWidth / 2
-halfH = display.contentHeight / 2
+require("global_variables")
 
 
 local carrier = {}
