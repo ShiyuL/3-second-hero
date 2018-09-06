@@ -4,13 +4,18 @@
 --
 -----------------------------------------------------------------------------------------
 
-halfW = display.contentWidth / 2
-halfH = display.contentHeight / 2
-
-local screen_adjustment = 0.3
-local background = display.newImage("\\Assets\\Statics\\Images\\open_background.jpg", halfW, halfH)
-background.xScale = (screen_adjustment  * background.contentWidth)/background.contentWidth
-background.yScale = background.xScale
-
-local title_text = "3 Seconds Hero"
-local title = display.newText(title_text, halfW, halfH)
+local bg = require("welcome")
+bg.setBackground()
+local game = require("game")
+local widget = require("widget")
+myButton = widget.newButton
+{
+	left = 90,
+	top = 400,
+	width = 150,
+	height = 50,
+	defaultFile = "\\Assets\\Statics\\Images\\button_background.png",
+	overFile = "\\Assets\\Statics\\Images\\button_background_pressed.png",
+	label = "Start Game",
+	onEvent = game.startGame,
+}
