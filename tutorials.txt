@@ -1,5 +1,9 @@
 Basic:
 write your first Android Game: https://www.youtube.com/watch?v=1hf0HYq5yzc&t=12s
 Lectures about how to use Corona: https://www.youtube.com/watch?v=hixisL2uUcQ&index=2&list=PLB8268CBEDDE78ED9
+
 Example: 
 (14 lectures) Game Tutorial: https://www.youtube.com/watch?v=G5RarQ03MZA
+
+How to use composer:
+http://docs.coronalabs.com/guide/system/composer/index.html

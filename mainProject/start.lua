@@ -1,25 +1,31 @@
+
+require("global_variables")
 local composer = require( "composer" )
 local scene = composer.newScene()
 
 print("at start.lua")
 
 -- background 
-function scene:createScene(event)
+function scene:create(event)
 
-	local screen = self.view
+	local screenGroup = self.view
 
-	background = display.newImage("\\Assets\\Statics\\Images\\open_background.jpg")
+	local screen_adjustment = 0.3
+	background = display.newImage("\\Assets\\Statics\\Images\\open_background.jpg", halfW, halfH)
+	background.xScale = (screen_adjustment  * background.contentWidth)/background.contentWidth
+	background.yScale = background.xScale
+
 	screenGroup:insert(background)
 
 end
 
 function start(event)
 	if event.phase == "began" then
-		storyboard.gotoScene("game", "fade", 400)
+		composer.gotoScene("game", "fade", 400)
 	end
 end
 
-function scene:enterScene(event)
+function scene:show(event)
 	local widget = require("widget")
 	myButton = widget.newButton
 	{
@@ -36,18 +42,18 @@ function scene:enterScene(event)
 
 end
 
-function scene:exitScene(event)
-	background:removeEventListener("touch", start)
+function scene:hide(event)
+	
 end
 
-function scene:destroyScene(event)
+function scene:destroy(event)
 
 end
 
 
-scene:addEventListener("createScene", scene)
-scene:addEventListener("enterScene", scene)
-scene:addEventListener("exitScene", scene)
-scene:addEventListener("destroyScene", scene)
+scene:addEventListener("create", scene)
+scene:addEventListener("show", scene)
+scene:addEventListener("hide", scene)
+scene:addEventListener("destroy", scene)
 
 return scene
