@@ -1,20 +1,12 @@
-require("global_variables")
-
-local carrier = {}
-
-function startGame( event ) 
-	local phase = event.phase
-	if "ended" == phase then
-		print("Start Button is pressed")
-		local bg = require("welcome")
-		bg.clearBackground()
-		myButton:removeSelf()
-		myButton = nil
-
-		display.newText("Game ON!", halfW, halfH)
-	end
+local composer = require( "composer" )
+local scene = composer.newScene()
+print("at game.lua")
+function scene:createScene(event)
+	local screenGroup = self.view
+	screenGroup.newText("Game ON!")
 end
 
-carrier.startGame = startGame
-return carrier
 
+
+scene:addEventListener("createScene", scene)
+return scene
