@@ -7,3 +7,7 @@ Example:
 
 How to use composer:
 http://docs.coronalabs.com/guide/system/composer/index.html
+
+How to move a char left and right:
+http://www.gamebuildingtools.com/corona-sdk/move-character-left-right-corona-sdk/
+https://www.youtube.com/watch?v=zxtR435YM0A
