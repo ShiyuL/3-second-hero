@@ -17,15 +17,6 @@ function scene:create(event)
 
 	screenGroup:insert(background)
 
-end
-
-function start(event)
-	if event.phase == "began" then
-		composer.gotoScene("game", "fade", 400)
-	end
-end
-
-function scene:show(event)
 	local widget = require("widget")
 	myButton = widget.newButton
 	{
@@ -38,12 +29,23 @@ function scene:show(event)
 		label = "Start Game",
 		onEvent = start,
 	}
+	screenGroup:insert(myButton)
+
+end
+
+function start(event)
+	if event.phase == "began" then
+		composer.gotoScene("game", "fade", 400)
+	end
+end
+
+function scene:show(event)
 
 
 end
 
 function scene:hide(event)
-	
+
 end
 
 function scene:destroy(event)
